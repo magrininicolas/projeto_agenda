@@ -1,0 +1,23 @@
+<nav class="navbar navbar-expand navbar-dark bg-dark">
+    <div class="container-fluid">
+        <% if(user) { %>
+        <a class="navbar-brand fs-4" href="/home">Agenda</a>
+        <% } %>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <% if(user) { %>
+                    <a href="/contato" class="nav-link text-white fs-5">Cadastrar Contato</a>
+                <li class="nav-item">
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white fs-5" href="/login/logout">Sair</a>
+                </li>
+                <% }else { %>
+                <li class="nav-item">
+                    <a class="nav-link text-white fs-5" href="/">Entrar</a>
+                </li>
+                <% } %>
+            </ul>
+        </div>
+    </div>
+</nav>
