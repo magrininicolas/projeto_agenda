@@ -15,7 +15,7 @@ const session = require('express-session');
 const MongoStore = require('connect-mongo')(session);
 const flash = require('connect-flash');
 const sessionOptions = session({
-    secret: 'KKKKKKKKKKKKKKKKKKKKK',
+    secret: 'segredokk',
     store: new MongoStore({
         mongooseConnection: mongoose.connection
     }),
